@@ -1,0 +1,4 @@
+# Environment variables for WTF-is-Flask
+
+# The next line must be the last line in the file for switch-app.sh to work
+FLASK_APP=/home/spencer/Documents/git/WTF-is-Flask/chapters/hello-world/hello-world.py
