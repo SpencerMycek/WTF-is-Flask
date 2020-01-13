@@ -80,3 +80,17 @@ This command is confusing, but it uses the package venv to create a virtual
 environment named venv, the second venv in the command can be changed to be
 whatever you want it to be, I have it as venv to keep everything simple.
 
+After running the above command, activate the virtual environment by running
+
+On linux/MacOS:
+```
+source venv/bin/activate
+```
+
+On Windows:
+```
+venv\Scripts\activate
+```
+
+And deactivate the environnemt by typing: `deactivate`
+
