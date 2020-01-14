@@ -6,7 +6,7 @@
 read -r -d '' CHAPTERS <<- EOM
 1. Hello, World!
 2. Templates
-3. N/A
+3. Web Forms
 EOM
 # Create a limit on which chapters are avaiable
 LASTCHAPTER=2
@@ -15,6 +15,7 @@ BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 CHAPTER_ARRAY=(
         $BASEDIR"/chapters/hello-world/hello-world.py"
         $BASEDIR"/chapters/templates/templates.py"
+        $BASEDIR"/chapters/webforms/webforms.py"
 )
 
 
