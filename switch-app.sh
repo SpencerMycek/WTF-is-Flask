@@ -9,7 +9,7 @@ read -r -d '' CHAPTERS <<- EOM
 3. Web Forms
 EOM
 # Create a limit on which chapters are avaiable
-LASTCHAPTER=2
+LASTCHAPTER=3
 # Create an array of references to each chapter's flask app
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 CHAPTER_ARRAY=(
