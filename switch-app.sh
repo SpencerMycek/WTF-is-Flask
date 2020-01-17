@@ -8,9 +8,11 @@ read -r -d '' CHAPTERS <<- EOM
 2. Templates
 3. Web Forms
 4. Database
+5. Logins
 EOM
 # Create a limit on which chapters are avaiable
-LASTCHAPTER=4
+LASTCHAPTER=5
+
 # Create an array of references to each chapter's flask app
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 CHAPTER_ARRAY=(
@@ -18,6 +20,7 @@ CHAPTER_ARRAY=(
         $BASEDIR"/chapters/templates/templates.py"
         $BASEDIR"/chapters/webforms/webforms.py"
         $BASEDIR"/chapters/databases/databases.py"
+        $BASEDIR"/chapters/logins/logins.py"
 )
 
 
