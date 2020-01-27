@@ -62,3 +62,8 @@ while true; do
     fi
 done
 
+ls -r $BASEDIR"/migrations" 2>/dev/null 1>/dev/null
+if [[ $? -eq 0 ]]; then
+        rm -rf $BASEDIR"/migrations"
+fi
+
