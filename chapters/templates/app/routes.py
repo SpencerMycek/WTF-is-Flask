@@ -1,4 +1,4 @@
-#from flask import render_template
+from flask import render_template
 from app import app
 
 @app.route('/')
@@ -15,8 +15,9 @@ def index():
             'body': 'The Avengers movie was so cool!'
         }
     ]
-    #return render_template('index.html', title='home', user=user, posts=posts)
+    return render_template('index.html', title='home', user=user, posts=posts)
     #return render_template('index.html', user=user)
+"""
     return '''
 <html>
     <head>
@@ -26,4 +27,4 @@ def index():
         <h1>Hello, ''' + user['username'] + '''!</h1>
     </body>
 </html>'''
-
+"""
